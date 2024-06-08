@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "segoe ui";
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 20);
+  }
+  body .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  body .main .pic {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  body .main .pic img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 0.5s;
+  }
+  body .main .pic .desc {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    transition: 0.5s;
+    padding: 10px;
+    color: #fff;
+  }
+  body .main .pic a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(0, 124, 248);
+    opacity: 0;
+    pointer-events: none;
+    transition: 1.7s;
+  }
+  body .main .pic:hover img{
+    filter: blur(5px) grayscale(100%);
+    transform: scale(1.2);
+  }
+  body .main .pic:hover .desc {
+    top: 60%;
+  }
+  body .main .pic:hover .a {
+    opacity: 1;
+    pointer-events: all;
+  }
