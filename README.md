@@ -47,8 +47,9 @@ Copy code
 take-home/
 │
 ├── index.html
-├── styles.css
-├── script.js
+├── styles -style.js
+
+├── scripts -script.js
 │
 └── challenge 2/
     ├── array-target.js
